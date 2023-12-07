@@ -1,0 +1,15 @@
+        }.sheet(isPresented: $showScreen) {
+            UIImagePickerControllerRepresentable(image: $image,
+                                                 showScreen:  $showScreen)
+        }
+    }
+}
+
+struct UIViewControllerRepresentableUsage_Previews: PreviewProvider {
+    static var previews: some View {
+        UIViewControllerRepresentableUsage()
+    }
+}
+
+struct UIImagePickerControllerRepresentable: UIViewControllerRepresentable {
+    
